@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Api</title>
+    <meta name="autor" content="Andre Silveira" />
+    <!-- Javascript File -->
+
+    <script src="./javascript/index.js" type="module" defer></script>
+
+    <!-- CSS File -->
+
+    <link href="./styles/styles.css" rel="stylesheet" />
+  </head>
+  <body class="firstBody">
+    <div class="headers">
+        <h1 class="display-1">Check the weather in your city</h1>
+        <p class="lead">
+            By entering the <strong>Name</strong> and the <strong>City </strong>that you currently live in.
+          </p>
+    </div>
+      <div class="main-class container-sm">
+        <div class="row justify-content-center">
+            <div class="col-sm-6 col col1 ">
+                <form>
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Please enter your name</label>
+                      <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select" aria-label="Default select example" id="selectedCountry">
+                            <option selected>Select your city</option>
+                            <option value="lisbon">Lisbon</option>
+                            <option value="Madrid">Madrid</option>
+                            <option value="Paris">Paris</option>
+                          </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="button">Submit</button>
+                    <button type="button" class="btn btn-danger " id="reset" >Reset</button>
+                  </form>
+            </div>
+            <div class="col-sm-4 col col2">
+                <h1 class="display-6" id="getname">Data will be displayed below. </h1>
+                <p class="h4 paragraph" id="cityandcountry"></p>
+                <p class="h4 paragraph" id="weather-conditions"></p>
+                <p class="h4 paragraph" id="last-updated"></p>
+                <p class="h4 paragraph" id="temperature"></p>
+            </div>
+      </div>
+  </body>
+</html>

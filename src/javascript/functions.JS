@@ -11,9 +11,13 @@ function weatherConditions(conditions) {
 }
 
 function lastUpdate(update) {
-  return `the weather was updated in ${update}`;
+  return `the weather was updated in ${update}.`;
 }
 
 function cityAndCountry(city, country) {
-  return `Seems like you live in ${city}, city of ${country}`;
+  return `Seems like you live in ${city}, city of ${country}.`;
+}
+
+function upperCase(word) {
+  return word[0].toUpperCase() + word.substring(1).toLowerCase();
 }

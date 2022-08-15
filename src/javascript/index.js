@@ -36,5 +36,6 @@ form.addEventListener('submit', (event) => {
 reset.addEventListener('click', () => {
   paragraph.forEach((paragraph) => {
     paragraph.style.display = 'none';
+    getname.innerHTML = `<h1 class="display-6" id="getname">Refresh the page to get new data </h1>`;
   });
 });

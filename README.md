@@ -24,9 +24,9 @@ Your app is ready to be deployed!
 
 Deploys the app into the github repository.
 
-### [gh-pages -b master -d dist] (gh-pages -b {branch} -d {folder})
+[gh-pages -b master -d dist] (gh-pages -b {branch} -d {folder})
 
-All the dependencies and scripts are listed below:
+## All the dependencies and scripts are listed below:
 
 ```javascript
 "scripts": {

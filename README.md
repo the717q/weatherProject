@@ -27,3 +27,19 @@ Deploys the app into the github repository.
 ### [gh-pages -b master -d dist] (gh-pages -b {branch} -d {folder})
 
 All the dependencies and scripts are listed below:
+
+```javascript
+"scripts": {
+   "start": "parcel ./src/index.html",
+   "build": "parcel build ./src/index.html",
+   "analyze": "source-map-explorer ./dist/*js",
+   "deploy": "gh-pages -b master -d dist"
+ },
+ "dependencies": {
+   "bootstrap": "^5.2.0",
+   "gh-pages": "^4.0.0",
+   "parcel-bundler": "^1.12.5",
+   "source-map-explorer": "^2.5.2"
+ }
+
+```

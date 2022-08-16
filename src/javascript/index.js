@@ -7,13 +7,14 @@ const button = document.querySelector('#button');
 const reset = document.querySelector('#reset');
 const paragraph = document.querySelectorAll('.paragraph');
 const getname = document.querySelector('#getname');
+import { upperCase } from './functions';
 //Submits the form
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   getname.insertAdjacentHTML(
     'beforeend',
-    `<p class="h4">Thank you ${names.value}</p>`
+    `<p class="h4">Thank you, ${upperCase(names.value)}</p>`
   );
   //Disables the SUBMIT button and enables the RESET button
   //Fetch the country weather according to the selected value
@@ -32,6 +33,8 @@ form.addEventListener('submit', (event) => {
     }, 2000);
   }
 });
+
+//resets the data
 
 reset.addEventListener('click', () => {
   paragraph.forEach((paragraph) => {

@@ -1,17 +1,23 @@
-export { showTemperature, weatherConditions, lastUpdate, cityAndCountry };
+export {
+  upperCase,
+  showTemperature,
+  weatherConditions,
+  lastUpdate,
+  cityAndCountry,
+};
 
 // Each function provides a funtionality that is added into the DOM
 
 function showTemperature(temperature) {
-  return `Its currently ${temperature} degrees celsius.`;
+  return `It it currently ${temperature} degrees celsius.`;
 }
 
 function weatherConditions(conditions) {
-  return `The weather its ${conditions} in your city.`;
+  return `The weather it's ${conditions} in your city.`;
 }
 
 function lastUpdate(update) {
-  return `the weather was updated in ${update}.`;
+  return `The weather was updated in ${update} (Local time).`;
 }
 
 function cityAndCountry(city, country) {

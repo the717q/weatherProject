@@ -5,16 +5,22 @@
   "version": "1.0.0",
   "description": "WeatherAPI",
   "license": "ISC",
+  "source": "./src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html",
-    "analyze": "source-map-explorer ./dist/*js",
-    "deploy": "gh-pages -b master -d dist"
+    "deploy": "gh-pages -b master -d dist",
+    "report": "parcel build src/index.html --reporter @parcel/reporter-bundle-analyzer"
   },
   "dependencies": {
     "bootstrap": "^5.2.0",
-    "gh-pages": "^4.0.0",
-    "parcel-bundler": "^1.12.5",
-    "source-map-explorer": "^2.5.2"
+    "gh-pages": "^4.0.0"
+  },
+  "devDependencies": {
+    "@parcel/compressor-brotli": "^2.7.0",
+    "@parcel/compressor-gzip": "^2.7.0",
+    "@parcel/reporter-bundle-analyzer": "^2.7.0",
+    "parcel": "^2.7.0"
   }
 }
